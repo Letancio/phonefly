@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: aliceblue;
+}
+
+.text-home-page {
+    font-weight: 500;
+    font-style: bolder;
+    font-size: 30px;
+}
+
+.text-home-page strong {
+    color: #1d2b64;
+    /* fallback for old browsers */
+    color: -webkit-linear-gradient(to right, #1d2b64, #f8cdda);
+    /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to right, #1d2b64, #f8cdda);
+}
+
+.btn-ofertas {
+    background-color: #1d2b64;
+    color: aliceblue;
+    border-radius: 25px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.logo-text {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    /* Adiciona espaço para o efeito */
+}
+
+.logo-text::before {
+    content: "";
+    margin-top: -1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    /* Espessura do risco */
+    background: #00f260;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00f260, #0575e6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00f260, #0575e6);
+    border-radius: 50px;
+    /* Deixa as bordas arredondadas */
+    z-index: -1;
+    /* Mantém atrás do texto */
+    transform: rotate(-3deg);
+    /* Pequena inclinação para parecer natural */
+}
+
+/* From Uiverse.io by Yaya12085 */
+.card-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    padding: 20px 1px;
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(33, 150, 243, .4), 0 4px 6px -4px rgba(33, 150, 243, .4);
+    border-radius: 10px;
+    background-color: #6B6ECC;
+    background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+}
+
+.content {
+    padding: 20px;
+}
+
+.content .price {
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+}
+
+.content .description {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.content .title {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.64);
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(33 150 243);
+    border-radius: 0.5rem;
+    width: 90%;
+    text-shadow: 0px 4px 18px #2c3442;
+}
+
+/* From Uiverse.io by Spacious74 */
+.outer {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 1px;
+    background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
+    position: relative;
+}
+
+.dot {
+    width: 5px;
+    aspect-ratio: 1;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px #ffffff;
+    border-radius: 100px;
+    z-index: 2;
+    right: 10%;
+    top: 10%;
+    animation: moveDot 6s linear infinite;
+}
+
+@keyframes moveDot {
+
+    0%,
+    100% {
+        top: 10%;
+        right: 10%;
+    }
+
+    25% {
+        top: 10%;
+        right: calc(100% - 35px);
+    }
+
+    50% {
+        top: calc(100% - 30px);
+        right: calc(100% - 35px);
+    }
+
+    75% {
+        top: calc(100% - 30px);
+        right: 10%;
+    }
+}
+
+.card-metrica {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    border: solid 1px #202222;
+    background-size: 20px 20px;
+    background: radial-gradient(circle 280px at 0% 0%, #444444, #0c0d0d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    color: #fff;
+}
+
+.ray {
+    width: 220px;
+    height: 45px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #c7c7c7;
+    opacity: 0.4;
+    box-shadow: 0 0 50px #fff;
+    filter: blur(10px);
+    transform-origin: 10%;
+    top: 0%;
+    left: 0;
+    transform: rotate(40deg);
+}
+
+.card-metrica .text {
+    font-weight: bolder;
+    font-size: 4rem;
+    background: linear-gradient(45deg, #000000 4%, #fff, #000);
+    background-clip: text;
+    color: transparent;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #2c2c2c;
+}
+
+.topl {
+    top: 10%;
+    background: linear-gradient(90deg, #888888 30%, #1d1f1f 70%);
+}
+
+.bottoml {
+    bottom: 10%;
+}
+
+.leftl {
+    left: 10%;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, #747474 30%, #222424 70%);
+}
+
+.rightl {
+    right: 10%;
+    width: 1px;
+    height: 100%;
+}
+
+.phones {
+    background: rgba(255, 255, 255, 0.1);
+    /* Fundo semi-transparente */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    backdrop-filter: blur(5px);
+    /* Desfoque do fundo */
+    -webkit-backdrop-filter: blur(5px);
+    /* Suporte para Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Borda sutil */
+    color: white;
+    /* Cor do texto */
+    text-align: center;
+    /* Centralizar o conteúdo */
+}
+
+.phones h5{
+    font-size: 22px;
+    color: #000;
+}
